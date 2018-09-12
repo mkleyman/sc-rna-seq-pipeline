@@ -69,7 +69,7 @@ def map_reads_to_genes(sam_path: Path) -> Tuple[pd.Series, pd.Series]:
         }
     )
 
-    return rpkm, summary_data
+    return read_counts, summary_data
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
